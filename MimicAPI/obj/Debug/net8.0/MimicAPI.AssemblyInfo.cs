@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MimicAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7ebb3b111db070b19abf2b0203509776ccf4032")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba48bf7ca8a0d5ac21dd1733883421f238a24711")]
 [assembly: System.Reflection.AssemblyProductAttribute("MimicAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MimicAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

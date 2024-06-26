@@ -12,6 +12,8 @@ using MimicAPI.Data;
 using IHostingEnvironment = Microsoft.Extensions.Hosting.IHostingEnvironment;
 using MimicAPI.Repositories;
 using MimicAPI.Repositories.Contracts;
+using AutoMapper;
+using MimicAPI.Helpers;
 
 namespace MimicAPI
 {
@@ -20,6 +22,15 @@ namespace MimicAPI
         //servicos
         public void ConfigureServices(IServiceCollection services)
         {
+            // Configurar o automapper / ele mapea as propriedades de um objeto para o outro e ele copia esses valores,
+            // isso em classes que não tem relacionamneto entre elas mas tem propriedades em comum
+            //Criando o arquivo de configuração
+            var config = new MapperConfiguration(cfg => {
+                cfg.AddProfile(new DTOMapperProfile());
+            });
+            IMapper mapper = config.CreateMapper();
+            services.AddSingleton(mapper); //uma instancia pra todas aplicação
+
             // Desativa o roteamento de endpoint
             services.AddControllersWithViews(options =>
             {

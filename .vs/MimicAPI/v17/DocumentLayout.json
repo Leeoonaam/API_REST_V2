@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\helpers\\dtomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\helpers\\dtomapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\models\\dto\\palavradto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\models\\dto\\palavradto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\repositories\\palavrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\repositories\\palavrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\repositories\\contracts\\ipalavrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\repositories\\contracts\\ipalavrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,42 +31,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Startup.cs",
+              "RelativeDocumentMoniker": "MimicAPI\\Startup.cs",
+              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Startup.cs",
+              "RelativeToolTip": "MimicAPI\\Startup.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAowDIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:00:27.638Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Palavras.cs",
               "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Controllers\\Palavras.cs",
               "RelativeDocumentMoniker": "MimicAPI\\Controllers\\Palavras.cs",
               "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Controllers\\Palavras.cs",
               "RelativeToolTip": "MimicAPI\\Controllers\\Palavras.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAowEcAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:16:14.298Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PalavraRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Repositories\\PalavraRepository.cs",
-              "RelativeDocumentMoniker": "MimicAPI\\Repositories\\PalavraRepository.cs",
-              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Repositories\\PalavraRepository.cs",
-              "RelativeToolTip": "MimicAPI\\Repositories\\PalavraRepository.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAgwFAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:17:01.194Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-06-26T14:39:57.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IPalavraRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Repositories\\Contracts\\IPalavraRepository.cs",
-              "RelativeDocumentMoniker": "MimicAPI\\Repositories\\Contracts\\IPalavraRepository.cs",
-              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Repositories\\Contracts\\IPalavraRepository.cs",
-              "RelativeToolTip": "MimicAPI\\Repositories\\Contracts\\IPalavraRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Title": "PalavraDTO.cs",
+              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Models\\DTO\\PalavraDTO.cs",
+              "RelativeDocumentMoniker": "MimicAPI\\Models\\DTO\\PalavraDTO.cs",
+              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Models\\DTO\\PalavraDTO.cs",
+              "RelativeToolTip": "MimicAPI\\Models\\DTO\\PalavraDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T19:24:58.767Z",
+              "WhenOpened": "2024-06-26T14:17:42.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DTOMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Helpers\\DTOMapperProfile.cs",
+              "RelativeDocumentMoniker": "MimicAPI\\Helpers\\DTOMapperProfile.cs",
+              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Helpers\\DTOMapperProfile.cs",
+              "RelativeToolTip": "MimicAPI\\Helpers\\DTOMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:12:17.769Z",
               "EditorCaption": ""
             }
           ]
