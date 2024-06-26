@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MimicAPI.Data;
 using IHostingEnvironment = Microsoft.Extensions.Hosting.IHostingEnvironment;
+using MimicAPI.Repositories;
+using MimicAPI.Repositories.Contracts;
 
 namespace MimicAPI
 {
@@ -31,6 +33,7 @@ namespace MimicAPI
 
             //mvc
             services.AddMvc();
+            services.AddScoped<IPalavraRepository, PalavraRepository>(); //adiciona configuração do repositorio 
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
