@@ -19,6 +19,9 @@ namespace MimicAPI.Helpers
              */
             // config para possibilitar a conversao de paravra para palavraDTO
             CreateMap<palavra, PalavraDTO>();
+
+            //mapeamento da lista palavra para lista palavraDTO
+            CreateMap<PaginationList<palavra>, PaginationList<PalavraDTO>>();
         }
     }
 }

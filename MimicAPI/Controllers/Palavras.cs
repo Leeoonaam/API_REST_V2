@@ -22,22 +22,66 @@ namespace MimicAPI.Controllers
             _mapper = mapper;
         }
 
-        [Route("")] // deixar vazio porque assim que entrar no endereço: site.../api/palavras já vai obter todas as palavras sem precisar entrar no metodo
-        [HttpGet]
+        //[Route("")] // deixar vazio porque assim que entrar no endereço: site.../api/palavras já vai obter todas as palavras sem precisar entrar no metodo
+        [HttpGet("",Name = "OBTERTUDO")]
         public ActionResult ObterTodasPalavras([FromQuery] PalavraURLQuery URL) // FromQuery: Atributo informando que os valores vem de uma querystring | PalavraURLQuery: classe objeto para os parametros 
         {
             var item = _repository.ObterPalavras(URL);
 
             // se tentar acessar uma pagina que não existe, erro 404
-            if (URL.pagNumero > item.paginacao.TotalPaginas)
-            {
+            if (item.Results.Count == 0)
                 return NotFound();
-            }
-            // resposta no cabeçalho para informar a paginação pro usuario
-            Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(item.paginacao));
 
-            // retorna o item com todos os elementos listados
-            return Ok(item.ToList());
+            if (item.paginacao != null)
+                // resposta no cabeçalho para informar a paginação pro usuario
+                Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(item.paginacao));
+            
+            //refatoração do metodo para criar os link para navegação da lista de palavras
+            PaginationList<PalavraDTO> lista = CriarLinksListaPalavraDTO(URL, item);
+
+            // retorna lista com os links adicionados
+            return Ok(lista);
+        }
+
+        //Metodo para criar os link de navegação nas listas
+        private PaginationList<PalavraDTO> CriarLinksListaPalavraDTO(PalavraURLQuery URL, PaginationList<palavra> item)
+        {
+            //conversao da paginacao da palavra para paginar palavrasDTO
+            var lista = _mapper.Map<PaginationList<palavra>, PaginationList<PalavraDTO>>(item);
+
+            //loop adiconando link para cada palavra da lista de palavras
+            foreach (var palavra in lista.Results)
+            {
+                palavra.Links = new List<LinkDTO>(); //instancia
+                palavra.Links.Add(new LinkDTO("self", Url.Link("OBTEMPALAVRA", new { id = palavra.Id }), "GET"));
+            }
+
+            //preenchimento do link no resultado na lista
+            // Como na rota nãp tem parametro, a informaçao URL do fromquery, automaticamente servira como preenchimento para a querystring
+            lista.Links.Add(new LinkDTO("self", Url.Link("OBTERTUDO", URL), "GET"));
+
+            // links para paginação e possibilirar navegacao anterior e proximo
+            if (item.paginacao != null)
+            {
+                // resposta no cabeçalho para informar a paginação pro usuario
+                Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(item.paginacao));
+
+                // verifica para paginar a primeira corretamente
+                if (URL.pagNumero + 1 <= item.paginacao.TotalPaginas)
+                {
+                    //objeto para receber os parametros da paginacao
+                    var queryString = new PalavraURLQuery() { pagNumero = URL.pagNumero + 1, pagRegistro = URL.pagRegistro, Data = URL.Data };
+                    lista.Links.Add(new LinkDTO("next", Url.Link("OBTERTUDO", queryString), "GET"));
+                }
+                //verifica para demais paginas e ter a opção de volta
+                if (URL.pagNumero - 1 > 0)
+                {
+                    var queryString = new PalavraURLQuery() { pagNumero = URL.pagNumero - 1, pagRegistro = URL.pagRegistro, Data = URL.Data };
+                    lista.Links.Add(new LinkDTO("prev", Url.Link("OBTERTUDO", queryString), "GET"));
+                }
+            }
+
+            return lista;
         }
 
         //route removido para que o erro do parametro ID não retorno como query string no final do link
