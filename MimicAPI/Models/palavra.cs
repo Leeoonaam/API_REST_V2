@@ -1,9 +1,13 @@
-﻿namespace MimicAPI.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MimicAPI.Models
 {
     public class palavra
     {
         public int Id { get; set; }
+        [Required] //campo obrigatorio
         public string Nome { get; set; }
+        [Required] //campo obrigatorio
         public int Pontuacao { get; set; }
         public bool Ativo {  get; set; }
         public DateTime Criado { get; set; }

@@ -99,7 +99,7 @@ namespace MimicAPI.Controllers
 
             // copia toda informacao que vem do banco e vai converter criando o link já com o valor null
             PalavraDTO palavraDTO = _mapper.Map<palavra, PalavraDTO>(obj);
-            palavraDTO.Links = new List<LinkDTO>(); // instancia para adicionar, já que o valor vem null
+            //palavraDTO.Links = new List<LinkDTO>(); // instancia para adicionar, já que o valor vem null
             //adiciona o link
             //Utiliza a Url.Link, propriedade que existe no ControllerBase, para passar a rota
             palavraDTO.Links.Add(
@@ -117,7 +117,26 @@ namespace MimicAPI.Controllers
         [HttpPost]
         public ActionResult Cadastrar([FromBody]palavra palavra)
         {
+            //valida se o obj é null
+            if (palavra == null)
+                return BadRequest();
+
+            // valida os dados obrigatorios | utilizando o modelstate porque já valida seu objeto (palavra) de entrada no asp dot net
+            // !(negacao): verifica se é um objeto valido
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState); //metodo do erro 422
+
+            palavra.Ativo = true;
+            palavra.Criado = DateTime.Now;
+
             _repository.Cadastrar(palavra);
+
+            //mapeamento
+            PalavraDTO palavraDTO = _mapper.Map<palavra,PalavraDTO>(palavra);
+            palavraDTO.Links.Add(
+                new LinkDTO("self", Url.Link("OBTEMPALAVRA", new { id = palavraDTO.Id }), "GET"));
+
+
             return Created($"/api/palavras/{palavra.Id}",palavra); // apos criar ele retorna encaminhando para consulta junto com o id criado
         }
 
@@ -127,12 +146,31 @@ namespace MimicAPI.Controllers
         {
             var obj = _repository.Obter(id);
 
-            //verifica retorno do obj de busca
+            //verifica retorno do obj de busca no banco para depois validar os dados
             if (obj == null)
                 return NotFound();
 
+            //valida se o obj é null
+            if (palavra == null)
+                return BadRequest();
+
+            // valida os dados obrigatorios | utilizando o modelstate porque já valida seu objeto (palavra) de entrada no asp dot net
+            // !(negacao): verifica se é um objeto valido
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState); //metodo do erro 422
+
             palavra.Id = id; //caso não tenha entregado o id, força
+            //validações para manter o que vem do banco e atualiza somente a data atualizado para atual
+            palavra.Ativo = obj.Ativo;
+            palavra.Criado = obj.Criado;
+            palavra.Atualizado = DateTime.Now;
+
             _repository.Atualizar(palavra);
+
+            PalavraDTO palavraDTO = _mapper.Map<palavra, PalavraDTO>(palavra);
+            palavraDTO.Links.Add(
+                new LinkDTO("self", Url.Link("OBTEMPALAVRA", new { id = palavraDTO.Id }), "GET"));
+
             return Ok();
         }
 
