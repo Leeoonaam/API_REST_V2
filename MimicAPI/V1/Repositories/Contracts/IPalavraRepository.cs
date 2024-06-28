@@ -1,7 +1,7 @@
 ﻿using MimicAPI.Helpers;
-using MimicAPI.Models;
+using MimicAPI.V1.Models;
 
-namespace MimicAPI.Repositories.Contracts
+namespace MimicAPI.V1.Repositories.Contracts
 {
     public interface IPalavraRepository
     {

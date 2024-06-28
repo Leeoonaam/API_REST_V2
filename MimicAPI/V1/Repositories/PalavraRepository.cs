@@ -1,21 +1,21 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MimicAPI.Data;
 using MimicAPI.Helpers;
-using MimicAPI.Models;
-using MimicAPI.Repositories.Contracts;
+using MimicAPI.V1.Models;
+using MimicAPI.V1.Repositories.Contracts;
 using Newtonsoft.Json;
 
-namespace MimicAPI.Repositories
+namespace MimicAPI.V1.Repositories
 {
     public class PalavraRepository : IPalavraRepository // implementar a interface
     {
         private readonly Context _banco; //somente leitura
         //construtor para receber o context (banco)
-        public PalavraRepository(Context banco) 
+        public PalavraRepository(Context banco)
         {
             _banco = banco;
         }
-        
+
         public PaginationList<palavra> ObterPalavras(PalavraURLQuery URL)
         {
             //instancia para utilizar o metodo para trabalhar com a classe paginação interna

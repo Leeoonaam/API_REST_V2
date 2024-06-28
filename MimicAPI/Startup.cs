@@ -10,10 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MimicAPI.Data;
 using IHostingEnvironment = Microsoft.Extensions.Hosting.IHostingEnvironment;
-using MimicAPI.Repositories;
-using MimicAPI.Repositories.Contracts;
 using AutoMapper;
 using MimicAPI.Helpers;
+using MimicAPI.V1.Repositories;
+using MimicAPI.V1.Repositories.Contracts;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 namespace MimicAPI
 {
@@ -43,8 +44,18 @@ namespace MimicAPI
             });
 
             //mvc
-            services.AddMvc();
-            services.AddScoped<IPalavraRepository, PalavraRepository>(); //adiciona configuração do repositorio 
+            services.AddMvc(); 
+            //adiciona configuração do repositorio 
+            services.AddScoped<IPalavraRepository, PalavraRepository>(); 
+            // adiciona configuração de versionamento da api
+            services.AddApiVersioning(cfg =>
+            {
+                cfg.ReportApiVersions = true; // retorna no cabeçalho uma lista de versão disponiveis para que o usuario possa migrar de acordo com sua documentação
+                cfg.ApiVersionReader = new HeaderApiVersionReader("api-version"); // habilita a possibilidade de realizar a consulta utilizando o cabeçalho
+                cfg.AssumeDefaultVersionWhenUnspecified = true; // configuração para direciona o usuario para uma versão padrão, quando nao especifica na URL
+                cfg.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0); // definindo a versão padrão
+            }
+                ); 
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

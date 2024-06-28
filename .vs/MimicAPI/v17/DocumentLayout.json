@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\models\\palavra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\models\\palavra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\v2\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\v2\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\helpers\\paginationlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\helpers\\paginationlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\repositories\\palavrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\repositories\\palavrarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|c:\\users\\lcsol\\source\\repos\\leeoonaam\\api_rest_v2\\mimicapi\\v1\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47405941-40A0-4C9E-90A1-1A30AB13C467}|MimicAPI\\MimicAPI.csproj|solutionrelative:mimicapi\\v1\\controllers\\palavras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +27,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Palavras.cs",
-              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Controllers\\Palavras.cs",
-              "RelativeDocumentMoniker": "MimicAPI\\Controllers\\Palavras.cs",
-              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Controllers\\Palavras.cs",
-              "RelativeToolTip": "MimicAPI\\Controllers\\Palavras.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAowJQAAABUAAAA",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Startup.cs",
+              "RelativeDocumentMoniker": "MimicAPI\\Startup.cs",
+              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Startup.cs",
+              "RelativeToolTip": "MimicAPI\\Startup.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwDUAAACbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T14:39:57.392Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-06-28T14:19:43.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Palavras.cs",
+              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\V1\\Controllers\\Palavras.cs",
+              "RelativeDocumentMoniker": "MimicAPI\\V1\\Controllers\\Palavras.cs",
+              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\V1\\Controllers\\Palavras.cs",
+              "RelativeToolTip": "MimicAPI\\V1\\Controllers\\Palavras.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:02:39.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "palavra.cs",
-              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Models\\palavra.cs",
-              "RelativeDocumentMoniker": "MimicAPI\\Models\\palavra.cs",
-              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Models\\palavra.cs",
-              "RelativeToolTip": "MimicAPI\\Models\\palavra.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Title": "Palavras.cs",
+              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\V2\\Controllers\\Palavras.cs",
+              "RelativeDocumentMoniker": "MimicAPI\\V2\\Controllers\\Palavras.cs",
+              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\V2\\Controllers\\Palavras.cs",
+              "RelativeToolTip": "MimicAPI\\V2\\Controllers\\Palavras.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T14:04:47.737Z",
+              "WhenOpened": "2024-06-27T15:00:34.063Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PalavraRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Repositories\\PalavraRepository.cs",
-              "RelativeDocumentMoniker": "MimicAPI\\Repositories\\PalavraRepository.cs",
-              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Repositories\\PalavraRepository.cs",
-              "RelativeToolTip": "MimicAPI\\Repositories\\PalavraRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wCAAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T18:12:41.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaginationList.cs",
-              "DocumentMoniker": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Helpers\\PaginationList.cs",
-              "RelativeDocumentMoniker": "MimicAPI\\Helpers\\PaginationList.cs",
-              "ToolTip": "C:\\Users\\LcSol\\source\\repos\\Leeoonaam\\API_REST_V2\\MimicAPI\\Helpers\\PaginationList.cs",
-              "RelativeToolTip": "MimicAPI\\Helpers\\PaginationList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T18:04:15.69Z"
             }
           ]
         }

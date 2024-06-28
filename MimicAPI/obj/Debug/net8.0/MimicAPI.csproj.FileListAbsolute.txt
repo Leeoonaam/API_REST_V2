@@ -383,3 +383,7 @@ C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\obj\Debug\net8.0\refi
 C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\obj\Debug\net8.0\MimicAPI.pdb
 C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\obj\Debug\net8.0\MimicAPI.genruntimeconfig.cache
 C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\obj\Debug\net8.0\ref\MimicAPI.dll
+C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+C:\Users\LcSol\source\repos\Leeoonaam\API_REST_V2\MimicAPI\obj\Debug\net8.0\MimicAPI.MvcApplicationPartsAssemblyInfo.cs

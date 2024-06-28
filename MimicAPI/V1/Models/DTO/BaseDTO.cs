@@ -1,4 +1,4 @@
-﻿namespace MimicAPI.Models.DTO
+﻿namespace MimicAPI.V1.Models.DTO
 {
     // abstract para não instanciar a classe
     public abstract class BaseDTO

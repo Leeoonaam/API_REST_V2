@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MimicAPI.Models;
+using MimicAPI.V1.Models;
 
 namespace MimicAPI.Data
 {
