@@ -9,3 +9,4 @@ API Rest com ASP.NET Core funcional
 - Links Self
 - Validação de endtidades
 - Versionamento da API
+- Configuração Migration para criação do banco de dados local
